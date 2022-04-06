@@ -321,11 +321,11 @@ void goxel_init(void)
     }
     goxel.palette = goxel.palette ?: goxel.palettes;
 
+    //goxel_add_gesture(GESTURE_DRAG, GESTURE_RMB, on_pan);
+    goxel_add_gesture(GESTURE_DRAG, GESTURE_LMB | GESTURE_ALT | GESTURE_SHIFT, on_pan);
+    goxel_add_gesture(GESTURE_DRAG, GESTURE_LMB | GESTURE_ALT | GESTURE_CTRL, on_zoom);
+    goxel_add_gesture(GESTURE_DRAG, GESTURE_LMB | GESTURE_ALT, on_rotate);
     goxel_add_gesture(GESTURE_DRAG, GESTURE_LMB, on_drag);
-    goxel_add_gesture(GESTURE_DRAG, GESTURE_RMB, on_pan);
-    goxel_add_gesture(GESTURE_DRAG, GESTURE_MMB | GESTURE_SHIFT, on_pan);
-    goxel_add_gesture(GESTURE_DRAG, GESTURE_MMB | GESTURE_CTRL, on_zoom);
-    goxel_add_gesture(GESTURE_DRAG, GESTURE_MMB, on_rotate);
     goxel_add_gesture(GESTURE_HOVER, 0, on_hover);
 
     goxel_reset();

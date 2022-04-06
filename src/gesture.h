@@ -74,6 +74,7 @@ enum {
     GESTURE_RMB     = 1 << 2,
     GESTURE_SHIFT   = 1 << 3,
     GESTURE_CTRL    = 1 << 4,
+    GESTURE_ALT     = 1 << 5,
 };
 
 /*

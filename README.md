@@ -2,6 +2,14 @@
 Goxel
 =====
 
+**This is a Goxel fork with Blender style navigation.**
+
+```
+      ALT+LMB -> Rotate
+SHIFT+ALT+LMB -> Pan
+ CTRL+ALT+LMB -> Zoom
+```
+
 Version 0.10.7
 
 By Guillaume Chereau <guillaume@noctua-software.com>

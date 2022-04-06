@@ -27,6 +27,7 @@ static bool test_button(const inputs_t *inputs, const touch_t *touch, int mask)
 {
     if (mask & GESTURE_SHIFT && !inputs->keys[KEY_LEFT_SHIFT]) return false;
     if (mask & GESTURE_CTRL && !inputs->keys[KEY_CONTROL]) return false;
+    if (mask & GESTURE_ALT && !inputs->keys[KEY_ALT]) return false;
     if ((mask & GESTURE_LMB) && !touch->down[0]) return false;
     if ((mask & GESTURE_MMB) && !touch->down[1]) return false;
     if ((mask & GESTURE_RMB) && !touch->down[2]) return false;
